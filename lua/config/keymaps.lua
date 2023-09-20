@@ -13,3 +13,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>w", "<c-w>", { noremap = true })
+
+vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
