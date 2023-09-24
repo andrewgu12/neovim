@@ -7,6 +7,7 @@
 -- * add extra plugins
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
+--
 return {
   {
     "navarasu/onedark.nvim",
@@ -17,6 +18,17 @@ return {
       require("onedark").load()
     end,
   },
+
+    {
+    'numToStr/Comment.nvim',
+    opts = {
+        -- add any options here
+    },
+    lazy = false,
+        config = function()
+            require('Comment').setup()
+        end,
+},
 
   -- Configure LazyVim to load gruvbox
   {
